@@ -12,6 +12,7 @@
   - [Step 2: Create the "public" network](#step-2-create-the-%22public%22-network)
   - [Step 3: Deploy the Reverse Proxy](#step-3-deploy-the-reverse-proxy)
   - [Step 4: Deploy the Application](#step-4-deploy-the-application)
+  - [Step 5: Sit and Wait](#step-5-sit-and-wait)
 
 ## Portainer Stacks
 
@@ -237,3 +238,10 @@ networks:
     external:
       name: public
 ```
+
+### Step 5: Sit and Wait
+
+If all containers were launched successfully, it may take a minute for the website to start showing up. Additionally,
+it may take additional time to get the actual certificate depending on DNS propagation and other factors not mentioned here.
+
+This document makes no mention of DNS configuration because that is already assumed to be configured as it should be.
